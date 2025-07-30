@@ -10,8 +10,6 @@ local function sendNotify(type, message, time)
             type = type,
             duration = time
         })
-    elseif Config.NotificationType == 'wsk' then
-        exports['wsk-notifications']:notify(type, message, time)
     else
         print('[AnchorBoat] Notificatie:', message)
     end
